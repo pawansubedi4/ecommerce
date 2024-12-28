@@ -1,0 +1,292 @@
+
+.body{
+    padding: 0;
+    margin: 0;
+    font-family: "Gill Sans";
+
+
+}
+    
+.container{
+    width: 100%;
+    margin: auto;
+    background-color: blue;
+}
+
+.top-header{
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+}
+
+.top-header a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.top-header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.top-left{
+    width: 48%;
+    color: aliceblue;
+}
+
+.top-left ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height:40px;
+    align-items: center;
+}
+
+
+.top-left ul li{
+    margin-right: 20px;
+}
+
+
+.top-right{
+    width: 48%;
+    color: aliceblue;
+}
+
+.top-right ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height:40px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.top-right ul li{
+    margin-left: 20px;
+}
+
+.main-header{
+    width: 100%;
+    max-height: 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.logo-section{
+    width: 10%;
+    height: 100px;
+}    
+
+.logo-section img{
+    width: 135%;
+    height: 80%;
+}
+
+.search-section{
+    width: 70%;
+    height: 80px;
+    align-content: center;
+}
+
+.form-control{
+    width: 70%;
+    height: 40px;
+    text-indent: 20px;
+}
+
+.button-success{
+    width: 20%;
+    height: 40px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+nav{
+    width: 100%;
+    background: blue;
+    
+}
+
+nav ul{
+    
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    z-index: 5000;
+}
+
+
+nav a{
+    
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li{
+    min-width: 150px;
+    text-align: center;
+    line-height: 50px;
+    position:relative;
+}
+
+nav ul li ul{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: blue;
+    display: none;
+}
+
+nav ul li ul li{
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+nav ul li:hover{
+    background: black;
+}
+nav ul li:hover ul{
+    display: block;
+}
+
+.banner-section{
+    width: 100%;
+    height: 500px;
+    background: black;
+}
+
+.slider-section{
+    width: 100%;
+    height:500px;
+    position: relative;
+}
+
+.slider-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider-content{
+    width: 50%;
+    height: 200px;
+    background: blue;
+    position: absolute;
+    bottom: 100px;
+    padding: 10px;
+    color: white;
+    opacity: 0.7;
+}
+
+
+.news_container{
+    margin: 20px 0 30px 0;
+}
+
+.news_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+}
+
+
+.news-box{
+    width: 100%;
+    height: 320px;
+    padding: 3px;
+    box-shadow: 0 0 10px 0 rgba(37, 32, 32, 0.127);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-box a{
+    text-decoration: none;
+    color: rgb(68, 0, 255);
+}
+
+.news-image{
+   width: 100%;
+   height: 190px;
+}
+.news-image img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+
+}
+
+.news-content{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.news-content h1{
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+
+.read-more{
+    min-width: 100px;
+    height: 30px;
+    background: blue;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-section{
+    width: 100%;
+    height: 60px;
+    position: relative;
+
+}
+.pric_section{
+    text-align: right;
+    font-size: 25px;
+    font-style: normal;
+
+}
+.discount{
+    margin-right: 100px;
+    margin-bottom: 1px;
+    margin-left: 130px;
+    font-size: 30px;
+    font-style: normal;
+    
+}
+.contact_form{
+    width: 100%;
+    background-color: blue;
+}
+
+
+footer{
+    width: 100%;
+    min-height: 30px;
+    background: blue;
+    margin-top: 30px;
+    
+}
+heading{
+    width: 100%;
+    background-color: black;
+}
+
+

@@ -1,0 +1,32 @@
+{% extends 'layouts.html' %}
+{% block content%}
+<div class="heading">
+    <div class="news_container">
+        <div class="news_section">
+            {% for name in data1 %}
+    
+            <div class="news-box">
+                <div class="news-image">
+                    <img src="media/{{name.p_photo}}" alt="">
+                </div>
+                <div class="news-content">
+    
+                    <p>
+                        {{name.p_detail}}
+    
+    
+                    </p>
+                </div>
+                <div class="btn-section">
+                    <button class="read-more">Buy now</button>
+                    <div class="discount">{{name.p_discount}}%</div>
+                    <div class="pric_section">RS{{name.p_price}}</div>
+    
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'layouts.html' %}
+{% block content %}
+<div class="news_container">
+    <div class="news_section">
+        {% for name in productdata %}
+        <div class="news-box">
+            <div class="news-image">
+                <img src="media/{{name.p_photo}}" alt="">
+            </div>
+            <div class="news-content">
+
+                <p>
+                    {{name.p_detail}}
+
+
+                </p>
+            </div>
+            <div class="btn-section">
+                <a class="read-more" href="{% url 'buy' name.id %}">buy now</a>
+                <div class="discount">{{name.p_discount}}%</div>
+                <div class="pric_section">RS{{name.p_price}}</div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+
+</div>
+{% endblock %}

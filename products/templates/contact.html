@@ -1,0 +1,20 @@
+{% extends 'layouts.html' %}
+{% block content%}
+<blockquote>
+    <h1>contact us</h1>
+    <hr>
+    <form method="post">
+        {% csrf_token %}
+        
+        <label for="Name">name</label><br>
+        <input type="text" id="Name" required><br>
+        <label for="Email">email</label><br>
+        <input type="email" id="Email" required><br>
+        <label for="Phone">Phone</label><br>
+        <input type="text" id="Phone" required><br>
+        <label for="Comments">Comments</label><br>
+        <input type="text" id="Comments" required><br>
+        <button type="submit" class="submit-btn">add comments</button>
+    </form>
+</blockquote>
+{% endblock %}
